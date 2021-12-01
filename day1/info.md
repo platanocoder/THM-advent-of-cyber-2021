@@ -1,8 +1,9 @@
-##Advent of Code Day 1
-#IDOR Vulnerabilities
+# Advent of Code Day 1
+## IDOR Vulnerabilities
 
 - **How to find them**
 1. **Query Component:**
+
 Query component data is passed in the URL when making a request to a website. 
 Take, for instance, the following screenshot of an URL.
 
@@ -32,6 +33,7 @@ Changing the value of this field from 123 to another user_id
 may result in changing the password for another user's account.
 
 3. **Cookies**
+
 To stay logged into a websites cookies are used to remember your session. 
 Usually, this will involve sending a session id which is a long string of 
 random hard to guess text such as 5db28452c4161cf88c6f33e57b62a357, 
@@ -57,8 +59,8 @@ User-Agent: Mozilla/5.0 (Ubuntu;Linux) Firefox/94.0
 Hello Martin!
 ```
 
-*Example bug bounty URL: *
+* Example bug bounty URL: *
 https://corneacristian.medium.com/top-25-idor-bug-bounty-reports-ba8cd59ad331
 
-*Suggested room for learning more about IDOR vulns*
+* Suggested room for learning more about IDOR vulns *
 https://tryhackme.com/room/idor
