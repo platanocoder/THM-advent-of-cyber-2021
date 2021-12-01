@@ -1,7 +1,6 @@
 # Advent of Code Day 1
-## IDOR Vulnerabilities
+## IDOR Vulnerabilities and where to find them
 
-- **How to find them**
 1. **Query Component:**
 
 Query component data is passed in the URL when making a request to a website. 
@@ -19,6 +18,7 @@ We can breakdown this URL into the following:
 - Query Component: id=23
 
 2. **Post Variables**
+
 Examining the contents of forms on a website can sometimes reveal fields that could be vulnerable to IDOR exploitation. Take, for example, the following HTML code for a form that updates a user's password.
 ```
 <form method="POST" action="/update-password">
@@ -59,8 +59,8 @@ User-Agent: Mozilla/5.0 (Ubuntu;Linux) Firefox/94.0
 Hello Martin!
 ```
 
-* Example bug bounty URL: *
+*Example bug bounty URL:*
 https://corneacristian.medium.com/top-25-idor-bug-bounty-reports-ba8cd59ad331
 
-* Suggested room for learning more about IDOR vulns *
+*Suggested room for learning more about IDOR vulns*
 https://tryhackme.com/room/idor
